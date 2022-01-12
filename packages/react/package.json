@@ -1,4 +1,7 @@
 {
+  "name": "@jakevo-ui/react",
+  "author": "rub1cc",
+  "module": "dist/jui.esm.js",
   "version": "0.1.0",
   "license": "MIT",
   "main": "dist/index.js",
@@ -10,23 +13,23 @@
   "engines": {
     "node": ">=10"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
-    "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "prepublish": "npm run build"
   },
   "peerDependencies": {
     "react": ">=16"
   },
-  "name": "@jakevo-ui/react",
-  "author": "rub1cc",
-  "module": "dist/jui.esm.js",
   "size-limit": [
     {
       "path": "dist/jui.cjs.production.min.js",
