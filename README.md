@@ -1,17 +1,17 @@
 <h3 align="center">
-  @jakevo-ui/react
+  Jakevo UI
 </h3>
 
 <p align="center">
-  React component library for Jakevo based on Tailwind CSS.
+  Component library for Jakevo based on Tailwind CSS.
 </p>
 
-## Installation
+---
 
-```sh
-# npm
-npm install @jakevo-ui/react
+## Documentation
 
-# Yarn
-yarn add @jakevo-ui/react
-```
+COMING SOON
+
+## Packages
+
+- [@jakevo/ui](https://github.com/rub1cc/jakevo-ui/tree/master/packages/react)

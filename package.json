@@ -1,6 +1,7 @@
 {
   "name": "jakevo-ui",
   "license": "MIT",
+  "private": true,
   "workspaces": [
     "packages/*"
   ],
@@ -28,7 +29,7 @@
     "test": "lerna run test --",
     "lint": "lerna run lint -- --fix",
     "build": "lerna run build",
-    "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,md,mdx,css,scss,json}'",
+    "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json}'",
     "changeset": "changeset",
     "release": "changeset publish",
     "prepublish": "lerna run prepublish"
