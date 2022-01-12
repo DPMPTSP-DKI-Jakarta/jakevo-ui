@@ -32,7 +32,8 @@
     "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json}'",
     "changeset": "changeset",
     "release": "changeset publish",
-    "prepublish": "lerna run prepublish"
+    "prepublish": "lerna run prepublish",
+    "new-version": "lerna version --conventional-commits --yes"
   },
   "devDependencies": {
     "husky": "^4.3.8",
