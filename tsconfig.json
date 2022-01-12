@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.base.json",
+  "include": ["packages"],
+  "compilerOptions": {
+    "allowJs": false,
+    "baseUrl": ".",
+    "typeRoots": ["./node_modules/@types"],
+    "paths": {
+      "react": ["./packages/react/src"],
+      "$test/*": ["test/*"]
+    }
+  }
+}

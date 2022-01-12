@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "tsdx",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "prettier"
+  ],
+  "overrides": [
+    {
+      "files": ["*.json"],
+      "rules": {
+        "no-unused-expressions": "off"
+      }
+    },
+    {
+      "files": ["*.js", "*.jsx", "*.ts", "*.tsx"],
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/ban-ts-comment": "off",
+
+        "no-console": "error"
+      }
+    }
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
